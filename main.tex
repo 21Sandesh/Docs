@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\usepackage[absolute,overlay]{textpos} % Package for absolute positioning
+\setlength{\columnsep}{0mm}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[absolute,overlay]{textpos} % Package for absolute positioning
+\usepackage{lipsum}  
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.75\textwidth} 
+    \vspace{-\baselineskip} % Required for vertically aligning minipages
+    
+    \begin{minipage}[t]{0.25\textwidth}
+        \vspace{-\baselineskip} % Required for vertically aligning minipages
+        % Add circular image aligned with the name
+        \begin{tikzpicture}[remember picture,overlay]
+          \node[anchor=north west,inner sep=21pt, xshift=0.81cm] at (current page.north west) {\includegraphics[width=2.7cm,height=2.7cm]{SandeshProfile}}; % Adjust the width and height according to your preference
+        \end{tikzpicture}
+    \end{minipage}
+    \begin{minipage}[t]{0.75\textwidth}
+        { \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Sandesh Kawane}}}} % First name
+        
+        \vspace{6pt}
+        \begin{minipage}[t]{0.5\textwidth} % 40% of the page width for the first row of icons
+            \vspace{-\baselineskip} % Required for vertically aligning minipages
+            
+            % The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+            \icon{Phone}{14}{+91 8055788004}\\
+            \icon{Envelope}{11}{\href{mailto:sandeshkawane21@gmail.com}{sandeshkawane21@gmail.com}}\\   
+        
+        \end{minipage}
+        \vspace{3pt}
+        \begin{minipage}[t]{0.5\textwidth} % 27% of the page width for the second row of icons
+            \vspace{-\baselineskip} % Required for vertically aligning minipages
+            
+            \icon{Github}{11}{\href{https://github.com/21Sandesh}{github.com/21Sandesh}}\\
+            \icon{LinkedinSquare}{11}{\href{https://www.linkedin.com/in/sandesh-kawane/}{/in/sandesh-kawane}}\\    
+        
+        \end{minipage}
+    \end{minipage}
+    
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\vspace{4 pt}
+\cvsect{Skills and Certifications}
+\begin{entrylist}
+    \vspace{-8 pt}
+    \entry
+		{\textbf{Languages \& \\ Technologies:}}
+		{\normalfont C, C++, Java, Python, SQL,  Git, Docker, CLI, Computer Networks, Cybersecurity, Cloud Computing, Linux}
+        {}
+        {}
+    \vspace{-14 pt}
+    
+    \entry
+        {\textbf{Certifications:}}
+		{\normalfont {\href{https://coursera.org/share/45a8e986bd73e06892e6823497d785af}{Google - Foundations of Cybersecurity}} | {\href{https://www.cloudskillsboost.google/public_profiles/b5e81354-7f62-4d99-bc49-5a5c9fb8cde7}{Google Cloud Computing Foundations}} | {\href{https://www.cloudskillsboost.google/public_profiles/b5e81354-7f62-4d99-bc49-5a5c9fb8cde7}{Google - Data Analyst Learning Path}} | {\href{https://www.linkedin.com/learning/certificates/2e99cc9b1c4560ce3a15dbea1db820ba0c666f3eb4c444f0aa6e342ff1dc4fa2}{Generative AI by Microsoft and LinkedIn}}}
+		{}
+		{}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-14 pt}
+\cvsect{Education}
+\vspace{-4 pt}
+\begin{entrylist}
+    \vspace{-6 pt}
+    \entry
+		{Dec '21 - Present}
+		{Vishwakarma Institute of Technology, Pune MH}
+		{CGPA: 8.66}
+		{Bachelor's of Technology, Computer Engineering}
+    \vspace{-3 pt}
+    \entry
+		{June '19 - May '21}
+		{Nutan Junior College, Malkapur MH}
+		{92.17\%}
+		{HSC Board - Class XII}
+    \entry
+            {May '19}
+		{Madhubhau Saoji Memorial English School, Malkapur MH}
+		{90.40\%}
+		{Central Board of Secondary Education - Class X}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\vspace{-20 pt}
+\cvsect{Projects}
+\vspace{-4 pt}
+\begin{entrylist}
+\vspace{-4 pt}
+    \entry
+		{March '24}
+		{NetSentinel: Network Packets Detection and Prevention}
+		{\href{https://github.com/21Sandesh/NetSentinel-Network-Packets-Detection-and-Prevention.git}{Host}\hspace{0.15cm}|\hspace{0.15cm}\href{https://github.com/21Sandesh/NetSentinel-Network-Packets-Detection-and-Prevention.git}{GitHub}}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item {Built a web application for Network Intrusion Detection and Prevention (NIDP). This system integrates real-time monitoring, attack prediction using machine learning (99.8\% accuracy), and user authentication.{\color{white}99\%}}
+            \item {Implemented security features like HTTPS, reCAPTCHA, and parameterized queries to safeguard data and prevent unauthorized access.}
+        \end{itemize} \vspace{2 pt}
+        {\textit{Node.js}} | {\textit{Express}} | {\textit{MongoDB}} | {\textit{Python (pyshark)}} | {\textit{Machine Learning (pandas, numpy)}} | {\textit{Ejs, Flash}} | {\textit{Network Security}} | {\textit{API: Google reCAPTCHA}}}
+    \entry
+		{April '24}
+		{LANCast: Local Network File Sharing}
+		{\href{https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP}{GitHub}}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item {Developed LANCast, a Node.js file-sharing web application for local Wi-Fi networks. It offers an intuitive user interface for login, user management (online/offline status), and file sharing.{\color{white}9.9}}
+            \item {Broadcast feature - users can share files with anyone on the network using the broadcaster's IP address. {\color{white}99\%}}
+        \end{itemize} \vspace{2 pt}
+        {\textit{Node.js}} | {\textit{Express}} | {\textit{React.js}} | {\textit{SQL}}| {\textit{Socket}} | {\textit{Networking}}{\color{white}99\%}}
+    \entry
+            {October '23}
+		{Analysis of Sorting Algorithms with Graphical Representation in C}
+		{\href{https://github.com/21Sandesh/Performance-Analysis-of-Sorting-Algorithms---Graphical-Representation}{GitHub}}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item {5 sorting algorithms in C to evaluate performance across array sizes to understand time complexities.}
+            \item {Utilized the pbPlots library to visualize trends in time complexities, providing insightful graphical representations of the sorting algorithms' performance.{\color{white}99\%}}
+        \end{itemize} \vspace{4 pt}
+        {\textit{C}} | {\textit{pbPlots}} | {\textit{Sorting Algorithms}} | {\textit{Pointers}}{\color{white}99\%}}
+    \entry
+		{\textbf{Other Projects}}
+		{\normalfont {\href{https://github.com/21Sandesh/HTTP-Client-Server-Connection-using-TCP-IP}{HTTP Client Server Connection using TCP/IP}} | {\href{https://github.com/21Sandesh/Multi-Level-Encryption-Ideation}{Multi-Level Encryption (Ideation)}} | {\href{https://github.com/21Sandesh/Accident-Detection-and-Notifier-System}{Accident Detection and Notifier System}}  | {\href{https://github.com/21Sandesh/OSCP}{Memory Allocation Simulation in C}}}{\color{white}99\%}
+		{}
+		{\vspace{-10pt}
+        }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXTRA - CURRICULAR
+%----------------------------------------------------------------------------------------
+\vspace{-24 pt}
+\cvsect{Extra Curricular}
+\vspace{-2 pt}
+\begin{entrylist}
+    \entry
+		{June '24}
+		{Mastercard Cybersecurity Virtual Experience Program}
+            {\href{https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/mastercard/vcKAB5yYAgvemepGQ_Mastercard_N83YbH5ngw9aE8TKL_1717572444760_completion_certificate.pdf}{\normalsize Forage}}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item { Analyzed and identified security vulnerabilities through simulations, focusing on phishing attempts. {\color{white}99\%}}
+            \item { Recommended enhanced security training programs for targeted teams within the organization.{\color{white}99\%}}
+        \end{itemize} }
+	\entry
+            {July '22 - May '24}
+		{Research \& Innovation - Social Activity Secretary}
+            {\href{https://www.linkedin.com/company/vit-social-welfare-development/mycompany/}{\normalsize Social Welfare and Development Committee}}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item {Led "Aatmabodh’24" with 400 volunteers and 64 coordinators | Organized 5 social service activities for 500 volunteers | Achieved a record 602 blood donations for "Blood-D’22" | Secured an MOU with iVolunteer for social initiatives |  Conducted community surveys and Collaborated with government schools for "Utkarsh".{\color{white}99\%}}
+        \end{itemize}}
+        \vspace{-2 pt}
+	\entry
+		{Oct '22 - May '24}
+		{Database Secretary}
+            {\href{https://www.linkedin.com/company/computer-society-of-india-vit-pune/}{\normalsize Computer Society of India, VIT Pune}}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item {Manage data using Google Forms, Sheets, and Excel, designing HTML/CSS email for Communication.{\color{white}99\%}}
+        \end{itemize} }
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS AND PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\vspace{-12 pt}
+	\cvsect{Achievements and Publications}
+    \begin{entrylist}
+    \vspace{-12pt}
+    \entry
+		{February '24}
+		{\href{https://link.springer.com/chapter/10.1007/978-981-99-7711-6_15}{{\textbf{Springer Publication}} - \normalfont Accident Detection and Prevention for Advanced Driver Assistance System}}
+		{}
+		{}
+    \vspace{-12pt}
+    \entry
+		{April '23}
+            {\href{https://drive.google.com/drive/u/0/folders/139xi4CrjW6vkH4xCkY2ciR76Nd73aShJ}{{\textbf{SPIT Innovation Cup 2023}} - \normalfont Round 1 Winner}}
+		{}
+		{}
+    \vspace{-30pt}
+    \entry
+		{February '23}
+            {\href{https://drive.google.com/drive/u/0/folders/139xi4CrjW6vkH4xCkY2ciR76Nd73aShJ}{{\textbf{Tech for Good Hackathon 2023}} - \normalfont Winner}}
+		{}
+		{}
+    \vspace{-30pt}
+    \end{entrylist}
+%----------------------------------------------------------------------------------------
+\end{document}
